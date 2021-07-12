@@ -5,9 +5,9 @@
 
 <div align="center">
 
-# Yes酱-会发涩图的群管理机器人
+# 进击的Yes酱-会发涩图的群管理机器人
 
-_✨ 基于 [go-cqhttp](https://github.com/Mrs4s/go-cqhttp)，使用[OneBot](https://github.com/howmanybots/onebot)标准的插件 ✨_
+_✨ 基于 [go-cqhttp](https://github.com/Mrs4s/go-cqhttp)，使用[NoneBot](https://github.com/nonebot/nonebot2)标准的插件 ✨_
 
 </div>
 
@@ -30,16 +30,16 @@ _✨ 基于 [go-cqhttp](https://github.com/Mrs4s/go-cqhttp)，使用[OneBot](htt
 
 
 ---
+YesBot_ws_Go_CQHTTP 是采用python编写，基于Go-CQHTTP-YesBot二次开发，**可拓展的**，**适合新手**的入门级QQ机器人插件
 
-Go-CQHTTP-YesBot 是采用python编写，**可拓展的**，**适合新手**的入门级QQ机器人插件
-
-感谢@asda做的docker版本`docker pull zhengfan2014/yesbot`
+感谢[原作者的yes酱](https://github.com/Yang9999999/Go-CQHTTP-YesBot)
 
 ## 目前拥有的功能
 
 - 发送setu/猫猫图返回一张涩图/猫猫图
 - 检测关键字禁言
 - 私聊调教对话
+- 添加好友自动处理
 - ~~发送huangse获得R18涩图~~
 - 更多功能待开发....
 
@@ -85,4 +85,4 @@ Go-CQHTTP-YesBot 是采用python编写，**可拓展的**，**适合新手**的�
 
 ## 文档
 
-http://www.yang99.top/index.php/archives/18/
+https://www.jianshu.com/p/66318d7e26cf
