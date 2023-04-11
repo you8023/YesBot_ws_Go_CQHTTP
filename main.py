@@ -16,8 +16,9 @@ def recv_msg(_, message):
     try:
         rev = json.loads(message)
         # print(rev)
-        if rev == None:
-            # print('None.....')
+        if rev is None:
+            return False
+        if "post_type" not in rev.keys():
             return False
         else:
             if rev["post_type"] == "message":
