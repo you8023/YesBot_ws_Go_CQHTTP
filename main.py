@@ -9,7 +9,7 @@ print("start")
 ws_url = "ws://127.0.0.1:6700/ws"
 
 # 日志设置
-logging.basicConfig(level=logging.DEBUG, format='[void] %(asctime)s - %(levelname)s - %(message)s')
+logging.basicConfig(level=logging.DEBUG, format='[%(funcName)s] %(asctime)s - %(levelname)s - %(lineno)d: %(message)s')
 logger = logging.getLogger(__name__)
 
 def recv_msg(_, message):
