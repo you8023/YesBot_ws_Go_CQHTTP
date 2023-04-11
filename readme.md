@@ -44,7 +44,7 @@ YesBot_ws_Go_CQHTTP 是采用python编写，基于Go-CQHTTP-YesBot二次开发�
 ```json
 {
     "path":"/C:\\Users\\86175\\Desktop\\mybot\\pic\\mao\\",
-	"ban_words":["科学上网","黑产","翻墙"], 
+    "ban_words":["科学上网","黑产","翻墙"], 
     "apikey":"xxxxxxxxxxxxxxxx",
     "group":[123456789,987654321],
     "self_qq":"2013996860"
