@@ -2,10 +2,9 @@ import requests
 import json
 import os
 from random import choice
-import pymysql
-from urllib.parse import quote
-import jieba
-# import pandas as pd
+import pathlib
+
+
 configuration = json.load(open("./config.json", encoding='utf-8'))
 group = configuration["group"]
 apikey= configuration["apikey"]
@@ -107,8 +106,10 @@ def hs_pic(msg):
 
 def mao_pic(msg):
     if msg in ["来张猫猫图", "来张猫图", "猫图", "喵图", "maomao","猫猫图","猫"]:
-        setu_list = os.listdir(path)
-        local_img_url = "[CQ:image,file=file:///"+path+choice(setu_list)+"]"
+        abs_path = str(pathlib.Path(__file__).parent.parent.absolute())
+        mao_path = abs_path + path
+        setu_list = os.listdir(mao_path)
+        local_img_url = "[CQ:image,file=file:///"+mao_path+choice(setu_list)+"]"
         return [True, local_img_url]
     return [False]
 
